@@ -3,27 +3,18 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const initialValues = {
-    name: '',
+    title: '',
     description: '',
     color: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(initialValues);
+
   const [categories, setCategories] = useState([]);
-  const [category, setCategory] = useState(initialValues);
-
-  function setValue(key, value) {
-    setCategory({
-      ...category,
-      [key]: value,
-    });
-  }
-
-  function handlerChanges(event) {
-    setValue(event.target.getAttribute('name'), event.target.value);
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -42,41 +33,41 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {category.name}
+        {values.title}
       </h1>
 
       <form onSubmit={function handleSubmit(event) {
         event.preventDefault();
         setCategories([
           ...categories,
-          category,
+          values,
         ]);
 
-        setCategory(initialValues);
+        clearForm();
       }}
       >
         <FormField
-          label="Nome da Categoria"
+          label="Titulo da Categoria"
           type="text"
-          name="name"
-          value={category.name}
-          onChange={handlerChanges}
+          name="title"
+          value={values.title}
+          onChange={handleChange}
         />
 
         <FormField
           label="Descrição"
           type="textarea"
           name="description"
-          value={category.description}
-          onChange={handlerChanges}
+          value={values.description}
+          onChange={handleChange}
         />
 
         <FormField
           label="Cor"
           type="color"
           name="color"
-          value={category.color}
-          onChange={handlerChanges}
+          value={values.color}
+          onChange={handleChange}
         />
 
         <Button>
@@ -92,8 +83,8 @@ function CadastroCategoria() {
 
       <ul>
         {categories.map((value) => (
-          <li key={`${value.name}`}>
-            {value.name}
+          <li key={`${value.title}`}>
+            {value.title}
           </li>
         ))}
       </ul>

@@ -1,7 +1,7 @@
 {
   "categorias": [
     {
-      "titulo": "Gameplays",
+      "title": "Gameplays",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#6BD1FF",
       "link_extra": {
@@ -10,35 +10,35 @@
       },
       "videos": [
         {
-          "titulo": "Path of Exile: Harvest Official Trailer and Developer Commentary",
+          "title": "Path of Exile: Harvest Official Trailer and Developer Commentary",
           "url": "https://www.youtube.com/watch?v=Tv12xh498ms"
         },
         {
-          "titulo": "[PoE] Stream Highlights #398 - 7777 hours of Path of Exile",
+          "title": "[PoE] Stream Highlights #398 - 7777 hours of Path of Exile",
           "url": "https://www.youtube.com/watch?v=gvadhnONDrc"
         },
         {
-          "titulo": "Path of Exile - Three Very Rare, Underrated Unique Items in Harvest League (trade only)",
+          "title": "Path of Exile - Three Very Rare, Underrated Unique Items in Harvest League (trade only)",
           "url": "https://www.youtube.com/watch?v=5rI_D8Q7YVs"
         },
         {
-          "titulo": "Path of Exile - #10 - O Cetro de Deus (Gameplay PS4PRO PT-BR)",
+          "title": "Path of Exile - #10 - O Cetro de Deus (Gameplay PS4PRO PT-BR)",
           "url": "https://www.youtube.com/watch?v=7EN519xRXgo"
         },
         {
-          "titulo": "An Actual Beginner's Guide to Path of Exile 2020",
+          "title": "An Actual Beginner's Guide to Path of Exile 2020",
           "url": "https://www.youtube.com/watch?v=Aa2GiQfVdj8"
         },
         {
-          "titulo": "this build can farm THOUSANDS of seeds per hour",
+          "title": "this build can farm THOUSANDS of seeds per hour",
           "url": "https://www.youtube.com/watch?v=_-yL7Lroje8"
         },
         {
-          "titulo": "[ Path of Exile ] HoT Autobomber. Elder kill",
+          "title": "[ Path of Exile ] HoT Autobomber. Elder kill",
           "url": "https://www.youtube.com/watch?v=gSHE9mzpphs"
         },
         {
-          "titulo": "Path of Exile - Slayer Cyclone 2H Sword Sirus Deathless",
+          "title": "Path of Exile - Slayer Cyclone 2H Sword Sirus Deathless",
           "url": "https://www.youtube.com/watch?v=1s1yj5AcOa0"
         }        
       ]
